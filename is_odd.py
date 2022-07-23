@@ -4,7 +4,7 @@ from ast import Num
 from readline import read_init_file
 
 
-def is_odd(numero: Num) -> bool:
+def is_odd(numero: int) -> bool:
   contador = 0
 
   for i in range(1, numero + 1):
