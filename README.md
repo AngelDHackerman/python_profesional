@@ -33,3 +33,10 @@ __pip__ es el __npm__ de javascript
 `pip freeze > requirements.txt` Copia las dependecias instaladas en un archivo .txt para que los demas devs puedan instalarlas.
 
 `pip install -r requirements.txt` Instala todas las dependencias que sean necesarias para el proyecto.
+
+
+## Mypy para verificar los tipados en python 
+
+Para verificar los tipados con mypy, en la consola debemos escribir: 
+
+`mypy yourProgram.py --check-=untyped-defs`

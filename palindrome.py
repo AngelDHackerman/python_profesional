@@ -5,7 +5,7 @@ def is_palindrome(string: str) -> bool:  # ? Como en typescript, string es de ti
   return string == string[::-1]
 
 def run():
-  print(is_palindrome('ana'))
+  print(is_palindrome(1000))
 
 if __name__ == "__main__":
   run()
