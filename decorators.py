@@ -15,14 +15,18 @@ def run():
     for _ in range(1, 100000):
       pass
 
-  random_func()
-
   @execution_time
   def suma(a: int, b: int) -> int:
     return a + b
 
-  suma(5, 6)
+  @execution_time
+  def saludo(nombre='Angel'):  # ! nombre='Angel, esto es un argumento Nombrado "key words arguments" Kwargs
+    print(f'Hola {nombre}')
 
+
+  random_func()
+  suma(5, 6)
+  saludo()
 
 
 if __name__ == "__main__":
