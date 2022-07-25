@@ -26,9 +26,10 @@ class FiboIter():
 
 if __name__ == "__main__":
   fibonacci = FiboIter()  # ? Asi creamos una instancia de FiboIter
-  for element in fibonacci:
+  max_number = int(input('Cual sera el numero maximo de esta sucecion? '))
+  for element in fibonacci:  # todo: los iterables de fibonaccion son los 3 returns que estan dentro
     print(element)
     time.sleep(0.3)  # ? Hace esperar X seg para hacer el siguiente ciclo y poder ver como funciona la sucecion
-    if element >= 100000:
-      break
+    if element >= max_number:
+      raise StopIteration  # ? StopIteration, hace que se detenga la iteracion de __iter__ 
 
