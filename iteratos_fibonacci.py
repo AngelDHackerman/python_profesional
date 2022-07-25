@@ -9,7 +9,7 @@ class FiboIter():
     return self
 
   def __next__(self):
-    if self.couter == 0:
+    if self.counter == 0:
       self.counter += 1
       return self.n1  # creado el valor de n1. Esto es lo primero que regresara el ciclo for de abajo
     elif self.counter == 1:
