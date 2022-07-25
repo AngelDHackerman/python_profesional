@@ -28,3 +28,7 @@ if __name__ == "__main__":
   fibonacci = FiboIter()  # ? Asi creamos una instancia de FiboIter
   for element in fibonacci:
     print(element)
+    time.sleep(0.3)  # ? Hace esperar X seg para hacer el siguiente ciclo y poder ver como funciona la sucecion
+    if element >= 100000:
+      break
+
