@@ -26,3 +26,5 @@ class FiboIter():
 
 if __name__ == "__main__":
   fibonacci = FiboIter()  # ? Asi creamos una instancia de FiboIter
+  for element in fibonacci:
+    print(element)
